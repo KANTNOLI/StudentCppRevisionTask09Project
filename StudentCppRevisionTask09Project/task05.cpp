@@ -24,5 +24,20 @@
 */
 
 int task05(long number) {
-	return 0;
+	number = number > 0 ? number : -number;
+	if (number == 0)
+	{
+	//	cout << number << ": 0" << endl;
+		return 1;
+	}
+
+	int count = 0;
+	while (number > 0) {
+		count++;
+		number /= 10;
+	}
+
+	//cout << number << ":/ " << count << endl;
+
+	return count;
 }

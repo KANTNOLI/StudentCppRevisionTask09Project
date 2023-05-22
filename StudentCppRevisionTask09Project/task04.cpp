@@ -27,7 +27,7 @@
 string task04(int number) {
 	if (number <= 0)
 	{
-		cout << number << ": 0" << endl;;
+//		cout << number << ": 0" << endl;;
 		return "0";
 	}
 	string msg = "1";
@@ -42,6 +42,6 @@ string task04(int number) {
 		}
 	}
 
-	cout << number << ": " << msg << endl;
+//	cout << number << ": " << msg << endl;
 	return msg;
 }
