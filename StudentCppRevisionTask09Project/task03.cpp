@@ -22,5 +22,23 @@
 */
 
 string task03(int number) {
-	return"";
+	if (number <= 0)
+	{
+		return "0";
+	}
+
+	string msg = "1";
+	int digit = 2;
+	int degree =  0;
+	while (degree <= number) {
+		degree = pow(digit, 2);
+		if (degree <= number)
+		{
+			msg += " " + to_string(degree);
+		}
+
+		digit++;
+	}
+
+	return msg;
 }
