@@ -28,5 +28,7 @@
 */
 
 bool task02(int number) {
+
+
 	return false;
 }

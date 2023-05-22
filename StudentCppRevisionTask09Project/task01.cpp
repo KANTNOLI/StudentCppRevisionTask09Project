@@ -25,5 +25,17 @@
 */
 
 int task01(int number) {
-	return 0;
+	if (number <= 1)
+	{
+		return 0;
+	}
+
+	for (int i = 2; i < number + 1; i++) {
+		if (number % i == 0)
+		{
+			return i;
+		}
+	}
+
+	return 1;
 }
