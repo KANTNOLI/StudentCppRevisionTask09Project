@@ -31,5 +31,30 @@
 */
 
 bool taskX(long number) {
-	return 0;
+	if (number == 0)
+	{
+		//	cout << number << " true" << endl;
+		return true;
+	}
+	number = number > 0 ? number : -number;
+	while (number > 0)
+	{
+		int digit = number % 10;
+		long number2 = number / 10;
+
+		while (number2 > 0) {
+			int digit2 = number2 % 10;
+
+			if (digit == digit2) {
+				//	cout << number << " false" << endl;
+				return false;
+			}
+
+			number2 /= 10;
+		}
+		number /= 10;
+	}
+
+	//cout << number << " true" << endl;
+	return true;
 }
