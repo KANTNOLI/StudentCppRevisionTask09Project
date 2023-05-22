@@ -25,5 +25,23 @@
 */
 
 string task04(int number) {
-	return "";
+	if (number <= 0)
+	{
+		cout << number << ": 0" << endl;;
+		return "0";
+	}
+	string msg = "1";
+	int degree = 1;
+
+	while (degree <= number)
+	{
+		degree *= 2;
+		if (degree <= number)
+		{
+			msg += " " + to_string(degree);
+		}
+	}
+
+	cout << number << ": " << msg << endl;
+	return msg;
 }
