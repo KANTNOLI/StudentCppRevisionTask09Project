@@ -28,7 +28,23 @@
 */
 
 bool task02(int number) {
+	if (number <= 0)
+	{
+		return false;
+	}
 
+	int degree = 0;
+	int to_pow = 1;
+
+	while (degree <= number)
+	{
+		degree = pow(2, to_pow);
+		if (degree == number or number == 1)
+		{
+			return true;
+		}
+		to_pow++;
+	}
 
 	return false;
 }
